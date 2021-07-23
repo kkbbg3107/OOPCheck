@@ -18,7 +18,12 @@ namespace OOPPay.Model
         public void Pay(PayData p)
         {
             Console.WriteLine($"你使用了{_pay.PayMethod()}付款");
-            Console.WriteLine($"付款資料{p.GetMoney()} {p.GetTime()}");
+          
+            Console.WriteLine($"付款資料: 金額:{p.GetMoney()}\n日期:{p.GetTime()}");
+            foreach (var item in p.GetPayList())
+            {
+                Console.WriteLine($"明細:{item}");
+            }
         }
     }
 }

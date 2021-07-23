@@ -14,10 +14,12 @@ namespace OOPPay
             Console.WriteLine("請選擇輸入方式 按1:悠遊卡 按2:行動支付 按3:現金");
             var input = Console.ReadLine();
             PayData data = new PayData();
+            List<string> paylist = new List<string>();
+            paylist.Add("香蕉");
             data.SetPaySource(input);
             data.SetMoney(123);
             data.SetTime("2019/08/13");
-
+            data.SetPayList(paylist);
             Choose(data);
 
             Console.ReadLine();
