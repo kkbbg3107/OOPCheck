@@ -25,35 +25,39 @@ namespace OOPPay
             Console.ReadLine();
         }
 
-        public delegate void DoSomething(); // 宣告委派
-
-
         public static void Choose(PayData p)
         {
             Check check = new Check();
 
-            if (p.GetPaySource() == "1")
-            {
-                
-                check.setPay(new Card());
-                check.Pay(p);
-            }
-            else if (p.GetPaySource() == "2")
-            {
-                check.setPay(new Cash());
-                check.Pay(p);
-            }
-            else if (p.GetPaySource() == "3")
-            {
-                check.setPay(new Line());
-                check.Pay(p);
-            }
 
-            //Dictionary<string, DoSomething> d = new Dictionary<string, DoSomething>()
+            Dictionary<string, object> d = new Dictionary<string, object>()
+            {
+                {"1", new Card()},
+                {"2", new Line()},
+                {"3", new Cash()},
+            };
+
+            IPay pay =(IPay)d[p.GetPaySource()];
+            check.setPay(pay);
+            check.Pay(p);
+
+            //if (p.GetPaySource() == "1")
             //{
-            //    {"1", new DoSomething()},
-            //    {"2", }
-            //};}}
+
+            //    check.setPay(new Card());
+            //    check.Pay(p);
+            //}
+            //else if (p.GetPaySource() == "2")
+            //{
+            //    check.setPay(new Cash());
+            //    check.Pay(p);
+            //}
+            //else if (p.GetPaySource() == "3")
+            //{
+            //    check.setPay(new Line());
+            //    check.Pay(p);
+            //}
+
         } 
     }
 }
