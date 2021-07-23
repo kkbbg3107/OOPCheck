@@ -1,0 +1,7 @@
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\obj\Debug\OOPPay.csprojAssemblyReference.cache
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\obj\Debug\OOPPay.csproj.CoreCompileInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\bin\Debug\OOPPay.exe.config
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\bin\Debug\OOPPay.exe
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\bin\Debug\OOPPay.pdb
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\obj\Debug\OOPPay.exe
+C:\Users\kkbbg\OneDrive\桌面\測試作業\OOPPay\OOPPay\obj\Debug\OOPPay.pdb
