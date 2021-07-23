@@ -23,6 +23,9 @@ namespace OOPPay
             Console.ReadLine();
         }
 
+        public delegate void DoSomething(); // 宣告委派
+
+
         public static void Choose(PayData p)
         {
             Check check = new Check();
@@ -43,6 +46,12 @@ namespace OOPPay
                 check.setPay(new Line());
                 check.Pay(p);
             }
+
+            //Dictionary<string, DoSomething> d = new Dictionary<string, DoSomething>()
+            //{
+            //    {"1", new DoSomething()},
+            //    {"2", }
+            //};}}
         } 
     }
 }
